@@ -14,7 +14,7 @@ const removeBgImage = async (req, res) => {
         if (!user) {
             return res.json({ success: false, message: "User not found" })
         }
-
+        
         if (user.creditBalance === 0) {
             return res.json({ success: false, message: 'No Credit Balance', creditBalance: user.creditBalance })
         }
