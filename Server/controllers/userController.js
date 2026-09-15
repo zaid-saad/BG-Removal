@@ -73,12 +73,21 @@ const userCredits = async (req, res) => {
 
     try {
 
-        const { clerkId } = req.body
+        const { clerkId, tokenData } = req.body
 
-        const userData = await userModel.findOne({ clerkId })
+        let userData = await userModel.findOne({ clerkId })
+
+        if (!userData) {
+            userData = await userModel.create({
+                clerkId,
+                email: tokenData.email ?? '',
+                firstName: tokenData.first_name ?? tokenData.given_name ?? '',
+                lastName: tokenData.last_name ?? tokenData.family_name ?? '',
+                photo: tokenData.image_url ?? tokenData.picture ?? '',
+            })
+        }
 
         res.json({ success: true, credits: userData.creditBalance })
-
 
     } catch (error) {
         console.log(error.message);

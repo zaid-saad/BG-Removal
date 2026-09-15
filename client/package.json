@@ -12,6 +12,8 @@
   "dependencies": {
     "@clerk/clerk-react": "^5.12.0",
     "axios": "^1.7.7",
+    "baseline-browser-mapping": "^2.11.23",
+    "caniuse-lite": "^1.0.30001810",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0",

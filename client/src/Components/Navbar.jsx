@@ -29,7 +29,7 @@ const Navbar = () => {
               <img className='w-5' src={assets.credit_icon} alt="credit_icon" />
               <p  className='text-xs sm:text-sm font-medium text-gray-600'>Credits : {credit}</p>
             </button>
-            <p className='max-sm:hidden text-gray-600'>Hi, {user.fullName}</p>
+            <p className='max-sm:hidden text-gray-600'>Hi, {user.fullName || user.firstName || user.emailAddresses[0].emailAddress.split('@')[0]}</p>
             <UserButton/>
           </div>
           : <button onClick={() => openSignIn({})} className='bg-zinc-800 text-white flex items-center gap-4 px-4 py-2 sm:px-8 sm:py-3 text-sm rounded-full'>

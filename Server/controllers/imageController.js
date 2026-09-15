@@ -3,7 +3,7 @@ import fs from 'fs'
 import FormData from 'form-data'
 import userModel from '../models/userModel.js';
 
-// Controller functio to remove background from image
+// Controller function to remove background from image
 
 const removeBgImage = async (req, res) => {
     try {

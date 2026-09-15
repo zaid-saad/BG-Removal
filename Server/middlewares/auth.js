@@ -13,7 +13,13 @@ const authUser = async (req, res, next) => {
         }
 
         const token_decode = jwt.decode(token)
-        req.body.clerkId = token_decode.clerkId
+
+        if (!token_decode) {
+            return res.json({ success: false, message: "Not Authorized Login Again" })
+        }
+
+        req.body.clerkId = token_decode.sub
+        req.body.tokenData = token_decode
         next()
 
         

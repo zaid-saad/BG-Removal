@@ -2,8 +2,8 @@ import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
   clerkId: {type: String, required: true, unique: true},
-  email: {type: String, required: true},
-  photo: {type: String, required: true},
+  email: {type: String, required: false},
+  photo: {type: String, required: false},
   firstName: {type: String},
   lastName: {type: String},
   creditBalance: {type: Number, default: 5},
