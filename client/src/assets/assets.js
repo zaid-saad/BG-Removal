@@ -35,17 +35,17 @@ export const assets = {
 export const testimonialsData = [
     {
         id: 1,
-        text: "I've been using bg.removal for nearly two years, primarily for Instagram, and it has been incredibly user-friendly, making my work much easier.",
+        text: "This tool saved me hours of editing. I use it daily for my e-commerce product photos and the results are clean and professional every single time.",
         author: "Richard Nelson",
         image: profile_img_1,
-        jobTitle:'Web Developer'
+        jobTitle: 'E-commerce Seller'
     },
     {
         id: 2,
-        text: "I've been using bg.removal for nearly 6 months, I had a fantastic experience. The quality is top-notch. I recommend others to try this app.",
+        text: "Incredibly fast and accurate. I tried many background remover tools but this one stands out. The AI handles complex edges like hair perfectly.",
         author: "Donald Jackman",
         image: profile_img_2,
-        jobTitle:'UI Deginer'
+        jobTitle: 'UI Designer'
     },
 ];
 
@@ -54,18 +54,18 @@ export const plans = [
       id: 'Basic',
       price: 10,
       credits: 100,
-      desc: 'Best for personal use.'
+      desc: 'Perfect for individuals and casual use.'
     },
     {
       id: 'Advanced',
       price: 50,
       credits: 500,
-      desc: 'Best for business use.'
+      desc: 'Great for freelancers and growing teams.'
     },
     {
       id: 'Business',
       price: 250,
       credits: 5000,
-      desc: 'Best for enterprise use.'
+      desc: 'Built for agencies and high-volume workflows.'
     },
   ]
